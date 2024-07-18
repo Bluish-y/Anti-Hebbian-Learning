@@ -10,7 +10,7 @@ class AntiHebbianNetwork:
         Initialize an Anti-Hebbian Network with given parameters.
 
         Parameters:
-        - input_size: Number of input units.
+        - input_size: Number of input components.
         - output_size: Number of output units.
         - alpha: Anti-Hebbian learning rate.
         - beta: Hebbian learning rate.
@@ -19,13 +19,13 @@ class AntiHebbianNetwork:
         - activation_steepness: Lambda parameter for sigmoid activation function.
         - thresholds: Initial thresholds for output units.
         """
-        self.M = input_size  # Input Size
-        self.N = output_size  # Output Size
-        self.alpha = alpha  # Anti-Hebbian learning rate
-        self.beta = beta  # Hebbian Learning Rate
-        self.gamma = gamma  # Threshold Learning Rate
-        self.p = target_probability  # Target bit probability
-        self.lamda = activation_steepness  # Lambda
+        self.M = input_size  
+        self.N = output_size  
+        self.alpha = alpha  
+        self.beta = beta  
+        self.gamma = gamma  
+        self.p = target_probability  
+        self.lamda = activation_steepness 
 
         # Initialize weights
         self.qij = np.random.randn(output_size, input_size)  # Feedforward weights
@@ -43,11 +43,6 @@ class AntiHebbianNetwork:
         """
         Sigmoid activation function.
 
-        Parameters:
-        - x: Input to the sigmoid function.
-
-        Returns:
-        - Output of the sigmoid function.
         """
         return 1 / (1 + np.exp(-self.lamda * x))
 
