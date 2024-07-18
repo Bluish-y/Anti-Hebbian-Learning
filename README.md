@@ -1,7 +1,7 @@
 # Anti-Hebbian Network Simulation
 
 ## Overview
-This code simulates an Anti-Hebbian network using input patterns to update the network's weights and thresholds over a number of training epochs. It includes functions to generate input patterns, train the network, and visualize the results.
+This code simulates an Anti-Hebbian network using input patterns to update the network's weights and thresholds over a number of training epochs. It includes functions to generate input patterns, train the network, and visualize the results. This is a straightforward implementation of the algorithm provided in the Foldiak(1990) paper.
 
 ## Dependencies
 The following Python packages are required to run the code:
