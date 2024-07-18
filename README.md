@@ -12,7 +12,7 @@ The following Python packages are required to run the code:
 
 ## Components
 
-### 1. Class: AntiHebbianNetwork
+### Class: AntiHebbianNetwork
 The `AntiHebbianNetwork` class initializes the network, simulates its behavior with given inputs, updates weights, and tunes thresholds.
 
 #### Initialization
