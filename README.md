@@ -44,7 +44,7 @@ if __name__ == "__main__":
     network = AntiHebbianNetwork(64, 16, 0.3, 0.1, 0.1, p, 10, thresholds=None)
     network.train(generate_line_patterns, epochs=1200)
 ```
-Replace generate_line_patterns with generate_letter_patterns to use letter patterns instead. Adjust the epochs parameter to control the number of training epochs.
+Replace generate_line_patterns with generate_letter_patterns to use letter patterns instead or just run the version 1.4 for the letter patterns. Adjust the epochs parameter to control the number of training epochs.
 
 ## Output
 The script will print the progress of the training and plot the results at specified intervals, showing the weights of each unit as a function of learning trials.
